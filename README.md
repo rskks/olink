@@ -3,6 +3,7 @@ My workflows to analyze Olink data.
 
 TODO
 1st project:
+
   
   INITIATION
 - Sort data: create broad experiment labels for each sample ✅
@@ -12,10 +13,14 @@ TODO
 - Script to do boxplots for targets from subplot PCAs ✅
   
   PROPAGATION
+- ANOVA and Posthoc analysis: can do for all/some (pre-filter by subsets) datasets and plot boxplots with posthoc ***
+
+   
+  TERMINATION
 - PCA for each experiment -> pick relevant proteins
 - Heatmap for experiments/whole dataset -> pick relevant proteins
 - Boxplots for relevant proteins f/ each experiment
-  TERMINATION
+
   
 2nd project:
 - Pre-sort the data: creat labels
