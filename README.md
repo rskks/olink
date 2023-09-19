@@ -13,7 +13,7 @@ TODO
 - Script to do boxplots for targets from subplot PCAs ✅
   
   PROPAGATION
-- ANOVA and Posthoc analysis: can do for all/some (pre-filter by subsets) datasets and plot boxplots with posthoc ***
+- ANOVA and Posthoc analysis: can do for all/some (pre-filter by subsets) datasets and plot boxplots with posthoc *** ✅
 
    
   TERMINATION
