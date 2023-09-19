@@ -3,12 +3,20 @@ My workflows to analyze Olink data.
 
 TODO
 1st project:
-- Sort data: create broad experiment labels for each sample +
-- Write script to upload data +
-- Reinvent sorting/cutting off subsets from data +
-- Script to do a PCA for a subset +
-- Script to do boxplots for targets from subplot PCAs +
-
+  
+  INITIATION
+- Sort data: create broad experiment labels for each sample ✅
+- Write script to upload data ✅
+- Reinvent sorting/cutting off subsets from data ✅
+- Script to do a PCA for a subset ✅
+- Script to do boxplots for targets from subplot PCAs ✅
+  
+  PROPAGATION
+- PCA for each experiment -> pick relevant proteins
+- Heatmap for experiments/whole dataset -> pick relevant proteins
+- Boxplots for relevant proteins f/ each experiment
+  TERMINATION
+  
 2nd project:
 - Pre-sort the data: creat labels
 - Heatmap proteins
