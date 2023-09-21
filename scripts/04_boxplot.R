@@ -17,8 +17,8 @@ plot[[1]]
   #All significant from the latest ttest
 plot <- NPX_08_plasma %>%
   olink_boxplot(variable = "Subset", 
-                olinkid_list = ttest_sign_filtered,
-                number_of_proteins_per_plot = length(ttest_sign_filtered))
+                olinkid_list = ttest_sign_Plasma,
+                number_of_proteins_per_plot = length(ttest_sign_Plasma))
 
 plot[[1]]
 

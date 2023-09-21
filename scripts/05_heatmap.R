@@ -5,15 +5,27 @@ first50 <- NPX_08_plasmau %>%
   unique() %>%
   head(10)
 
-heatmap_data_NPX08plasma_b <- NPX_08_plasmau %>%
+heatmap_data_NPX08plasma <- NPX_08_plasma %>%
   filter(!str_detect(SampleID, 'CONT')) %>%
-  filter(OlinkID %in% ttest_sign_NPX1)
+  filter(OlinkID %in% ttest_sign_filtered)
 
-olink_heatmap_plot (heatmap_data_NPX08plasma_b, 
-                    variable_row_list = c('Subset'), 
+#Annotated
+olink_heatmap_plot (heatmap_data_NPX08plasma, 
+                    main = 'M059K Plasma Supermere treatment',
+                    variable_row_list = c('Sample','Subset'), 
                     show_rownames = FALSE,
                     #show_colnames = FALSE,
                     fontsize_col = 20,
                     angle_col = c("45"),
                     colnames = "assay",
                     fontsize = 9)
+#Unannotated
+olink_heatmap_plot (heatmap_data_NPX08plasma, 
+                    main = 'M059K Plasma Supermere treatment',
+                    variable_row_list = c('Sample','Subset'), 
+                    show_rownames = FALSE,
+                    show_colnames = FALSE,
+                    fontsize_col = 20,
+                    angle_col = c("45"),
+                    colnames = "assay",
+                    fontsize = 10)
