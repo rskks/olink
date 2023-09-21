@@ -3,5 +3,5 @@ library(dplyr)
 library(openxlsx)
 library(ggplot2)
 
-NPX_08_plasma <- NPX_08 %>%
-     filter(Experiment == "Blood")
+NPX_08_RNA <- NPX_08u %>%
+     filter(Experiment == "Rna")
