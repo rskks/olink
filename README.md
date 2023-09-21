@@ -14,6 +14,8 @@ TODO
   
   PROPAGATION
 - ANOVA and Posthoc analysis: can do for all/some (pre-filter by subsets) datasets and plot boxplots with posthoc *** ✅
+- Heatmap construction
+  
 
    
   TERMINATION
