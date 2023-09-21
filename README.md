@@ -14,8 +14,8 @@ TODO
   
   PROPAGATION
 - ANOVA and Posthoc analysis: can do for all/some (pre-filter by subsets) datasets and plot boxplots with posthoc *** ✅
-- Heatmap construction
-- Enrichment?
+- Heatmap construction olink_heatmap_plot
+- Enrichment? olink_pathway_enrichment - olink_pathway_heatmap
   
 
    
