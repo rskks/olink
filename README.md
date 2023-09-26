@@ -29,7 +29,7 @@ TODO
 
   
 2nd project:
-- Pre-sort the data: creat labels
+- Pre-sort the data: creat labels ✅
 - Heatmap proteins
 - Subset the data
 - Compare dilution series
