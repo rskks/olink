@@ -1,6 +1,6 @@
 # t-test npx_data1
 ttest_results_Plasma <- olink_ttest(df = NPX_08_plasma,
-                                  variable = "Treatment")
+                                  variable = "Isolation")
 
 # select names of the top #40 most significant proteins
 ttest_sign_Plasma <- ttest_results_Plasma %>%
@@ -25,7 +25,7 @@ ttest_results_filtered <- olink_ttest(df = filtered_data, variable = "Subset")
 
 # Select names of the top #10 most significant proteins
 ttest_sign_filtered_plasma <- ttest_results_filtered %>%
-  head(n = 20) %>%
+  head(n = 10) %>%
   pull(OlinkID)
 
 # Create a volcano plot with annotated top #20 most significant proteins

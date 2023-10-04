@@ -4,7 +4,7 @@ library(openxlsx)
 library(ggplot2)
 
 #read Olink NPX data
-NPX_08u <- read_NPX(file.choose())
+NPX_09 <- read_NPX(file.choose())
 
 mapping <- read.xlsx(file.choose())
 

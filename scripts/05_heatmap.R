@@ -7,7 +7,7 @@ first50 <- NPX_08_plasmau %>%
 
 heatmap_data_NPX08plasma <- NPX_08_plasma %>%
   filter(!str_detect(SampleID, 'CONT')) %>%
-  filter(OlinkID %in% ttest_sign_filtered)
+  filter(OlinkID %in% ttest_sign_Plasma)
 
 #Annotated
 olink_heatmap_plot (heatmap_data_NPX08plasma, 

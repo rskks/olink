@@ -44,3 +44,16 @@ plot <- NPX_08_plasma %>%
                                          posthoc_results = lmer_posthoc_twoway_results)
 plot[[1]]
 
+plot <- NPX_08_plasma %>%
+  olink_boxplot(variable = "Subset", 
+                olinkid_list = c("OID00520", "OID01213", "OID05548", "OID00553", "OID00510", "OID00496", "OID00534","OID00556"),
+                number_of_proteins_per_plot = 8)#,
+               # posthoc_results = anova_posthoc_oneway_results)
+plot[[1]]
+
+
+
+
+
+
+
