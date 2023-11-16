@@ -1,17 +1,17 @@
 # t-test npx_data1
-ttest_results_Plasma <- olink_ttest(df = NPX_08_plasma,
-                                  variable = "Isolation")
+ttest_results_NPX09EXprepost <- olink_ttest(df = NPX_09_EX,
+                                  variable = "Prepost")
 
 # select names of the top #40 most significant proteins
-ttest_sign_Plasma <- ttest_results_Plasma %>%
-  head(n=20) %>%
+ttest_sign_NPX09EXprepost <- ttest_results_NPX09EXprepost %>%
+  head(n=50) %>%
   pull(OlinkID)
   
   
 
 # volcano plot with annotated top #20 most significant proteins
-olink_volcano_plot(p.val_tbl = ttest_results_Bakeoff,
-                   olinkid_list = ttest_sign_Bakeoff) +
+olink_volcano_plot(p.val_tbl = ttest_results_NPX09EXprepost,
+                   olinkid_list = ttest_sign_NPX09EXprepost) +
   scale_color_manual(values = c('turquoise3', 'red'))
 
 # subset PCA
