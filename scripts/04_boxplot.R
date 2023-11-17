@@ -1,7 +1,7 @@
 plot <- NPX_08_plasma %>%
  #CXCL5 boxplot
   olink_boxplot(variable = "SampleID", 
-                olinkid_list = c("OID00520"),
+                olinkid_list = c("OID00496"),
                 number_of_proteins_per_plot  = 1)
 plot[[1]]
 
@@ -60,6 +60,13 @@ plot <- NPX_09_S %>%
 
 plot[[1]]
 
+plot <- NPX_09_PlasmaEVP_C2 %>%
+  #CXCL5 boxplot
+  olink_boxplot(variable = c("Combined"), 
+                olinkid_list = c("OID05209"),
+                #ttest_results = ttest_results_NPX09_PlasmaEVPnodilution,
+                number_of_proteins_per_plot  = 1)
+plot[[1]]
 
 
 

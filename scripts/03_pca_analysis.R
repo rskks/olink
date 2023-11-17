@@ -1,17 +1,17 @@
 # t-test npx_data1
-ttest_results_NPX09EXprepost <- olink_ttest(df = NPX_09_EX,
+ttest_results_NPX09_PlasmaEVPnodilution <- olink_ttest(df = NPX_09_PlasmaEVPnodilution,
                                   variable = "Prepost")
 
 # select names of the top #40 most significant proteins
-ttest_sign_NPX09EXprepost <- ttest_results_NPX09EXprepost %>%
+ttest_sign_NPX09_PlasmaEVPnodilution <- ttest_results_NPX09_PlasmaEVPnodilution %>%
   head(n=50) %>%
   pull(OlinkID)
   
   
 
 # volcano plot with annotated top #20 most significant proteins
-olink_volcano_plot(p.val_tbl = ttest_results_NPX09EXprepost,
-                   olinkid_list = ttest_sign_NPX09EXprepost) +
+olink_volcano_plot(p.val_tbl = ttest_results_NPX09_PlasmaEVPnodilution,
+                   olinkid_list = ttest_sign_NPX09_PlasmaEVPnodilution) +
   scale_color_manual(values = c('turquoise3', 'red'))
 
 # subset PCA
@@ -34,3 +34,8 @@ olink_volcano_plot(p.val_tbl = ttest_results_filtered,
                    ) +
   scale_color_manual(values = c('turquoise3', 'red'))
 
+# PCA plot
+NPX_09_PlasmaEVP100 %>%
+       filter(!str_detect(SampleID, 'CONTROL_SAMPLE')) %>% 
+       olink_pca_plot(df = .,              
+                       label_samples = TRUE, color_g = "QC_Warning")  
