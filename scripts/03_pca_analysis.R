@@ -1,17 +1,17 @@
 # t-test npx_data1
-ttest_results_NPX08_RNA2 <- olink_ttest(df = NPX_08_RNA2,
+ttest_results_RNA <- olink_ttest(df = NPX_08_RNA,
                                   variable = "Treatment")
 
 # select names of the top #40 most significant proteins
-ttest_sign_NPX08_RNA_RNAse <- ttest_results_NPX08_RNA_RNAse %>%
+ttest_sign_DiFiSupOE <- ttest_results_DiFiSupOE %>%
   head(n=50) %>%
   pull(OlinkID)
   
   
 
 # volcano plot with annotated top #20 most significant proteins
-olink_volcano_plot(p.val_tbl = ttest_results_NPX08_RNA_RNAse,
-                   olinkid_list = ttest_sign_NPX08_RNA_RNAse) +
+olink_volcano_plot(p.val_tbl = ttest_results_DiFiSupOE,
+                   olinkid_list = ttest_sign_DiFiSupOE) +
   scale_color_manual(values = c('turquoise3', 'red'))
 
 # subset PCA
